@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.1;
+}
+
+.sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-gray);
+}

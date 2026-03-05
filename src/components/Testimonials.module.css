@@ -1,0 +1,91 @@
+.testimonials {
+  padding: 100px 24px;
+  position: relative;
+  text-align: center;
+}
+
+.dotsLeft {
+  position: absolute;
+  top: 80px; left: 60px;
+  width: 90px; height: 80px;
+  background-image: radial-gradient(circle, #2563EB 2px, transparent 2px);
+  background-size: 14px 14px;
+}
+
+.dotsRight {
+  position: absolute;
+  bottom: 80px; right: 60px;
+  width: 90px; height: 80px;
+  background-image: radial-gradient(circle, #2563EB 2px, transparent 2px);
+  background-size: 14px 14px;
+}
+
+.inner { max-width: 1100px; margin: 0 auto; }
+
+.sectionLabel {
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  text-align: left;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.role {
+  font-size: 13px;
+  color: var(--text-gray);
+  margin-top: 2px;
+}
+
+.quote {
+  font-size: 14px;
+  color: var(--text-gray);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}
